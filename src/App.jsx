@@ -1,6 +1,10 @@
+import MainView from "./components/MainView/MainView.jsx";
+
 function App() {
   return (
-      <div></div>
+      <div>
+          <MainView />
+      </div>
   )
 }
 

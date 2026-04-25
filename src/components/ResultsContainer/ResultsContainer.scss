@@ -1,0 +1,22 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .result-title {
+    font-size: 1.5rem;
+  }
+
+  .smile {
+    font-size: 3rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: #959393;
+    }
+  }
+}

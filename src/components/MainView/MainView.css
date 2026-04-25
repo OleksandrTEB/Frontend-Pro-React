@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 2rem auto;
+  background-color: #d3cdcd;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 1rem;
+}
+.container .button-results {
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #238636;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+}
+.container .button-results:hover {
+  cursor: pointer;
+  background-color: #1b662a;
+}
+.container .button-results:active {
+  background-color: #165322;
+}
+.container .button-results-clear {
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #cd3636;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+}
+.container .button-results-clear:hover {
+  cursor: pointer;
+  background-color: #af3434;
+}
+.container .button-results-clear:active {
+  background-color: #ed3434;
+}
+
+/*# sourceMappingURL=MainView.css.map */
