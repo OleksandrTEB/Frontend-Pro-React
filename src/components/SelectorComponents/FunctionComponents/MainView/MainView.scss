@@ -1,0 +1,22 @@
+@use '../../../../styels/global' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 2rem auto;
+  background-color: #d3cdcd;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 1rem;
+
+  .button-results {
+    @include base-button;
+  }
+
+  .button-results-clear {
+    @include base-button(100%, #cd3636, #af3434, #ed3434);
+  }
+}

@@ -8,13 +8,18 @@ class SmileItem extends React.Component {
 
     render() {
         return (
-            <div className="smile-item">
+            <div
+                className="smile-item"
+                onClick={() => {
+                    this.props.handleClickToSmile(this.props.smile)
+                }}
+            >
                 <div className="smile">
-                    {this.props.code}
+                    {this.props.smile.smile}
                 </div>
 
                 <div className="amount-clicked">
-                    {this.props.clicked}
+                    {this.props.smile.clicked}
                 </div>
             </div>
         )

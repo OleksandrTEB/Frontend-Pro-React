@@ -1,0 +1,20 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.results-container .result-title {
+  font-size: 1.5rem;
+}
+.results-container .smile {
+  font-size: 3rem;
+}
+.results-container .smile:hover {
+  cursor: pointer;
+}
+.results-container .smile:active {
+  background-color: #959393;
+}
+
+/*# sourceMappingURL=ResultsContainer.css.map */

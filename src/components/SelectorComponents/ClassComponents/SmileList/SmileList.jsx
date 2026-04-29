@@ -5,20 +5,16 @@ import './SmileList.css';
 class SmileList extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            smiles: this.props.smiles
-        }
     }
 
     render() {
         return (
             <div className="smile-list">
-                {this.state.smiles.map((smile, index) =>
+                {this.props.smiles.map((smile, index) =>
                     <SmileItem
                         key={index}
-                        code={smile.smile}
-                        clicked={smile.clicked}
+                        smile={smile}
+                        handleClickToSmile={this.props.handleClickToSmile}
                     />
                 )}
             </div>

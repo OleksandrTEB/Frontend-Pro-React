@@ -1,0 +1,6 @@
+@use '../../styels/global' as *;
+
+.toggle {
+  margin: 1rem auto;
+  @include base-button(300px);
+}

@@ -1,11 +1,9 @@
-import MainView from "./components/MainView/MainView.jsx";
+import SelectorComponents from "./components/SelectorComponents/SelectorComponents.jsx";
 
 function App() {
-  return (
-      <div>
-          <MainView />
-      </div>
-  )
+    return (
+        <SelectorComponents />
+    )
 }
 
 export default App
