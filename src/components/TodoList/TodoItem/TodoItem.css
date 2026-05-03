@@ -1,0 +1,44 @@
+.todoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px;
+  width: 400px;
+}
+
+.events {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.dark-item {
+  background-color: #423a6f;
+}
+
+.light-item {
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+}
+
+.delete {
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #ca3d3d;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  width: 55px;
+  padding: 5px;
+}
+.delete:hover {
+  cursor: pointer;
+  background-color: #e34646;
+}
+.delete:active {
+  background-color: #973030;
+}
+
+/*# sourceMappingURL=TodoItem.css.map */

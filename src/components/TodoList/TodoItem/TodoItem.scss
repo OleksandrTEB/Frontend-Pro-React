@@ -1,0 +1,30 @@
+@use '../../../styels/global' as *;
+
+.todoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px;
+  width: 400px;
+}
+
+.events {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.dark-item {
+  background-color: #423a6f;
+}
+
+.light-item {
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+}
+
+.delete {
+  @include base-button(55px, #ca3d3d, #e34646, #973030);
+  padding: 5px;
+}

@@ -5,5 +5,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Custom';
+  font-family: Custom;
+}
+
+a {
+  @include base-button;
+  text-decoration: none;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
 }

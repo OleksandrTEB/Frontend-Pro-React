@@ -1,0 +1,35 @@
+@use '../../styels/global' as *;
+
+.header {
+  @include flex-row;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .navigations {
+    @include flex-row;
+    gap: 20px;
+  }
+
+  .themeContainer {
+    @include flex-row;
+    gap: 1rem;
+    align-items: center;
+
+    div {
+      white-space: nowrap;
+    }
+
+    button {
+      @include base-button;
+      font-size: 1rem;
+    }
+  }
+}
+
+.dark-border {
+  border-bottom: 2px solid white;
+}
+
+.light-border {
+  border-bottom: 2px solid black;
+}

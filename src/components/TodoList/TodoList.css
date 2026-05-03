@@ -1,0 +1,9 @@
+.todoList {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: start;
+  gap: 1px;
+}
+
+/*# sourceMappingURL=TodoList.css.map */

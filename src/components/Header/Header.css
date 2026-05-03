@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header .navigations {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.header .themeContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.header .themeContainer div {
+  white-space: nowrap;
+}
+.header .themeContainer button {
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #238636;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+}
+.header .themeContainer button:hover {
+  cursor: pointer;
+  background-color: #1b662a;
+}
+.header .themeContainer button:active {
+  background-color: #165322;
+}
+
+.dark-border {
+  border-bottom: 2px solid white;
+}
+
+.light-border {
+  border-bottom: 2px solid black;
+}
+
+/*# sourceMappingURL=Header.css.map */
