@@ -1,0 +1,157 @@
+.form-register {
+  margin: auto;
+  width: 500px;
+}
+
+label {
+  color: black;
+}
+
+.title {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  padding-bottom: 0.3rem;
+}
+
+.foc {
+  padding: 8px 30px 8px 12px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid rgb(149, 150, 149);
+  margin-bottom: 1rem;
+}
+.foc:focus {
+  height: 35px;
+  border: 2px solid rgb(39, 68, 228);
+}
+
+#country:focus {
+  height: 37px;
+}
+
+.div-email {
+  display: flex;
+  flex-direction: column;
+}
+.div-email label {
+  color: black;
+}
+.div-email .error-border-email {
+  border: 2px solid red;
+  height: 35px;
+}
+.div-email .message-email {
+  color: #bf1919;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.div-password {
+  display: flex;
+  flex-direction: column;
+}
+.div-password label {
+  color: black;
+}
+.div-password .error-border-password {
+  border: 2px solid red;
+  height: 35px;
+}
+.div-password .message-password {
+  color: #bf1919;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.div-username {
+  display: flex;
+  flex-direction: column;
+}
+.div-username label {
+  color: black;
+}
+.div-username .error-border-username {
+  border: 2px solid red;
+  height: 35px;
+}
+.div-username .message-username {
+  color: #bf1919;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.div-counry {
+  display: flex;
+  flex-direction: column;
+}
+.div-counry label {
+  color: black;
+}
+.div-counry select {
+  padding-right: 20px;
+}
+.div-counry select option {
+  color: black;
+}
+
+.license {
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+.license label {
+  color: black;
+  padding-left: 0.5rem;
+}
+
+.submit input {
+  border: none;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.submit input:hover {
+  background-color: rgb(20, 20, 20);
+}
+.submit input:active {
+  background-color: black;
+}
+.submit input:focus {
+  height: 45px;
+}
+.submit .message-already {
+  color: #bf1919;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.license {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+.license input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+.license label {
+  color: black;
+  padding-left: 0.5rem;
+}
+
+span {
+  color: red;
+}
+
+/*# sourceMappingURL=FormPage.css.map */

@@ -1,0 +1,179 @@
+.form-register {
+  margin: auto;
+  width: 500px;
+}
+
+label {
+  color: black;
+}
+
+.title {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  padding-bottom: .3rem;
+}
+
+.foc {
+  padding: 8px 30px 8px 12px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid rgb(149, 150, 149);
+  margin-bottom: 1rem;
+
+  &:focus {
+    height: 35px;
+    border: 2px solid rgb(39, 68, 228);
+  }
+}
+
+#country {
+  &:focus {
+    height: 37px;
+  }
+}
+
+.div-email {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: black;
+  }
+
+  .error-border-email {
+    border: 2px solid red;
+    height: 35px;
+  }
+
+  .message-email {
+    color: #bf1919;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.div-password {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: black;
+  }
+
+  .error-border-password {
+    border: 2px solid red;
+    height: 35px;
+  }
+
+  .message-password {
+    color: #bf1919;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.div-username {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: black;
+  }
+
+  .error-border-username {
+    border: 2px solid red;
+    height: 35px;
+  }
+
+  .message-username {
+    color: #bf1919;
+    font-weight: 500;
+    padding: 5px;
+  }
+}
+
+.div-counry {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: black;
+  }
+
+  select {
+    padding-right: 20px;
+
+    option {
+      color: black;
+    }
+  }
+}
+
+.license {
+  margin-top: .2rem;
+  margin-bottom: .6rem;
+
+  label {
+    color: black;
+    padding-left: .5rem;
+  }
+}
+
+.submit {
+  input {
+    border: none;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:hover {
+      background-color: rgb(20, 20, 20);
+    }
+
+    &:active {
+      background-color: black;
+    }
+
+    &:focus {
+      height: 45px;
+    }
+  }
+
+  .message-already {
+    color: #bf1919;
+    font-weight: 500;
+    padding: 5px;
+  }
+}
+
+.license {
+  display: flex;
+  align-items: center;
+  margin-top: .2rem;
+  margin-bottom: .6rem;
+
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+  }
+
+  label {
+    color: black;
+    padding-left: .5rem;
+  }
+}
+
+span {
+  color: red;
+}

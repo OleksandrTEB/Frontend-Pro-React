@@ -1,6 +1,8 @@
+import FormPage from './pages/Form/FormPage.jsx'
+
 function App() {
   return (
-      <div></div>
+      <FormPage/>
   )
 }
 
