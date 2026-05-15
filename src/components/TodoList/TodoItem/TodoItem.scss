@@ -1,0 +1,24 @@
+@use '../../../styels/global' as *;
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #6191ca;
+  padding: 10px;
+  border-radius: 5px;
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    .delete {
+      button {
+        @include base-button(100%, #c13d3d, #e44848, #a33131);
+        padding: 5px 12px;
+      }
+    }
+  }
+}

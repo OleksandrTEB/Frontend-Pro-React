@@ -1,0 +1,45 @@
+@use '../../styels/global' as *;
+
+.container {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
+  gap: 1rem;
+
+  .form {
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        @include base-input;
+        color: black;
+        background-color: transparent;
+
+        &:focus {
+          background-color: transparent;
+        }
+      }
+
+      .submit {
+        @include base-button;
+      }
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.clear {
+  @include base-button;
+}

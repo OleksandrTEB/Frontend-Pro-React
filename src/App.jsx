@@ -1,6 +1,10 @@
+import MainPage from "./pages/MainPage/MainPage.jsx";
+
 function App() {
   return (
-      <div></div>
+      <>
+          <MainPage />
+      </>
   )
 }
 
