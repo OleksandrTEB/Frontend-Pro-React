@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import { useDispatch, useSelector } from 'react-redux'
 
-import { add, clear, setTodos } from "../../store/todos/todosActions.js";
+import { addTodo, clear, setTodos } from "../../store/slices/todosSlice.js";
 import TodoList from "../../components/TodoList/TodoList.jsx"
 import "./MainPage.css"
 
@@ -61,7 +61,7 @@ function MainPage() {
     const [text, setText] = useState("")
 
     const dispatch = useDispatch()
-    const { todos } = useSelector((state) => state)
+    const { todos } = useSelector((state) => state.todos)
 
     useEffect(() => {
         setTimeout(() => {
@@ -73,7 +73,7 @@ function MainPage() {
         e.preventDefault()
 
         if (text.length > 0) {
-            dispatch(add(text))
+            dispatch(addTodo(text))
             setText("")
         }
     }

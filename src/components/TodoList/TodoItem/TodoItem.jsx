@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { remove, changeCompleted } from "../../../store/todos/todosActions.js";
+import { removeTodo, changeCompleted } from "../../../store/slices/todosSlice.js";
 
 import './TodoItem.css'
 
@@ -37,7 +37,7 @@ function TodoItem({ todo }) {
                 <div className="delete">
                     <button
                         onClick={() => {
-                            dispatch(remove(todo.id))
+                            dispatch(removeTodo(todo.id))
                         }}
                     >
                         Delete
