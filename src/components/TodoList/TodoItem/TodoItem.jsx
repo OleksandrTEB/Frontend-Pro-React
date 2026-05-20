@@ -23,7 +23,7 @@ function TodoItem({ todo }) {
     return (
         <div className="todo-item">
             <div className="text">
-                {todo.text}
+                {todo.title}
             </div>
 
             <div className="actions">

@@ -1,4 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
+
+import {getTodos} from "../thunks/todosThunk.js";
 
 const initialState = {
     todos: []
@@ -11,28 +13,18 @@ const todosSlice = createSlice({
         addTodo(state, action) {
             const todo = {
                 id: state.todos.length + 1,
-                text: action.payload,
+                title: action.payload,
                 completed: false
             }
 
             state.todos.push(todo)
         },
-
-        removeTodo(state, action) {
-            state.todos = state.todos.filter(todo => todo.id !== action.payload)
-        },
-
         clear(state) {
             state.todos = []
         },
-
-        setTodos(state, action) {
-            state.todos = action.payload
-        },
-
         changeCompleted(state, action) {
             state.todos = state.todos.map(todo => {
-                if(todo.id === action.payload.id) {
+                if (todo.id === action.payload.id) {
                     return {
                         ...todo,
                         completed: action.payload.completed,
@@ -41,16 +33,26 @@ const todosSlice = createSlice({
                     return todo
                 }
             })
-        }
+        },
+        removeTodo(state, action) {
+            state.todos = state.todos.filter(todo => todo.id !== action.payload)
+        },
+    },
+    extraReducers: (builder) => {
+        builder
+            .addCase(getTodos.fulfilled, (state, action) => {
+                state.loading = false;
+                state.todos = action.payload;
+            })
+
     }
 })
 
 export const {
-    addTodo,
-    removeTodo,
     clear,
-    setTodos,
-    changeCompleted
+    changeCompleted,
+    removeTodo,
+    addTodo
 } = todosSlice.actions;
 
 export default todosSlice.reducer;
