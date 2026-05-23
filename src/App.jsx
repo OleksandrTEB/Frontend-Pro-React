@@ -1,6 +1,8 @@
+import Cv from "./pages/cv/Cv.jsx"
+
 function App() {
   return (
-      <div></div>
+      <Cv />
   )
 }
 
