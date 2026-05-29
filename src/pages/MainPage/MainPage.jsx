@@ -15,6 +15,7 @@ function MainPage() {
     useEffect(() => {
         setTimeout(() => {
             dispatch(getTodos());
+            document.title = 'Мій список TODO'
         }, 1000)
     }, [])
 
